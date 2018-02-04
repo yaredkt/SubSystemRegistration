@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import edu.mum.mumsched.domain.User;
 
 @Repository("userRepository") //indicates that an annotated class is a repository, which is an abstraction of data access and storage.
-public interface UserRepository extends CrudRepository<User, Long> {
+public interface UserRepository1 extends CrudRepository<User, Long> {
 	 User findByEmail(String email);
 	 User findByConfirmationToken(String confirmationToken);
 }

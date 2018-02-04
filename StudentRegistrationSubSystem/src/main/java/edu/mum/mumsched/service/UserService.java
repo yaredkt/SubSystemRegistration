@@ -4,17 +4,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import edu.mum.mumsched.domain.User;
-import edu.mum.mumsched.repository.UserRepository;
+import edu.mum.mumsched.repository.UserRepository1;
 
 
 
 @Service("userService")  // indicates that an annotated class is a service class.
 public class UserService {
 
-	private UserRepository userRepository;
+	private UserRepository1 userRepository;
 
 	@Autowired
-	public UserService(UserRepository userRepository) {
+	public UserService(UserRepository1 userRepository) {
 		this.userRepository = userRepository;
 	}
 	
